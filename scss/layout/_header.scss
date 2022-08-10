@@ -1,0 +1,12 @@
+.header {
+    border-bottom: 1px solid #ececec;
+}
+.header-logo {
+    margin-right: 93px;
+
+    color: var(--text-color-main);
+}
+.header-container {
+    display: flex;
+    align-items: center;
+}

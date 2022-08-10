@@ -1,0 +1,29 @@
+
+:root {
+// Кольри
+    --white: #ffffff;
+    --background-accent: #2f303a;
+    --background-grey: #f5f4fa;
+    --text-color-main: #212121;
+    --text-color: #757575;
+    --accent-text-color: #2196f3;
+    --address-color: rgba(255, 255, 255, 0.6);
+    --button-hover: #188ce8;
+    --border-portfolio: #eeeeee;
+    --icons-color: #afb1b8;
+    --services-color: rgba(47, 48, 58, 0.8);
+    --portfolio-overlay: rgba(33, 150, 243, 0.9);
+    --form-input: rgba(33, 33, 33, 0.2);
+
+// Шрифт
+    --main-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+
+// cubic-bezier
+    --transition-cubik: cubic-bezier(0.4, 0, 0.2, 1);
+
+    //calc для flex-basis
+--indent: 30px;
+--amount: 2;
+--items: 3;
+}

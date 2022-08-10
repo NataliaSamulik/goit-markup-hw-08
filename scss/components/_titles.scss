@@ -1,0 +1,29 @@
+.section-title {
+    margin-bottom: 50px;
+
+    @include fonts(36px, 42px, 700);
+
+    text-align: center;
+}
+.section-subtitle {
+    @include fonts(14px, 16px, 700);
+
+    text-transform: uppercase;
+}
+
+.hero__title {
+    width: 696px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+    color: var(--white);
+   
+    @include fonts(44px, 60px, 900, 0.06em);
+
+    text-transform: uppercase;
+}
+
+.benefits-list__subtitle {
+    margin-bottom: 10px;
+}
+

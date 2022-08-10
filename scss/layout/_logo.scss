@@ -1,0 +1,11 @@
+.logo {
+    @extend %link;
+    font-family: var(--secondary-font);
+   
+    @include fonts(26px, 31px, 700);
+
+    
+    &__web {
+            color: var(--accent-text-color);
+        }
+}

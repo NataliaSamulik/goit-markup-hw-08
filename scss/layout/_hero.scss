@@ -1,0 +1,28 @@
+.hero {
+  max-width: 1600px;
+  padding: 200px 0;
+  background-color: var(--background-accent);
+
+  text-align: center;
+
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../image/hero/team-hero.jpg');
+
+  background-repeat: no-repeat;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero__button {
+  display: inline-block;
+
+  padding: 10px 32px;
+
+  transition: background-color 250ms var(--transition-cubik);
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-hover);
+  }
+}

@@ -1,0 +1,38 @@
+.footer__container {
+  display: flex;
+  gap: 70px;
+  align-items: baseline;
+}
+
+.footer {
+  padding: 60px 0;
+  background-color: var(--background-accent);
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-right: 0;
+  color: var(--white);
+}
+
+.footer__title {
+  margin-bottom: 20px;
+
+  color: var(--white);
+  text-transform: uppercase;
+
+  @include fonts(14px, 16px);
+}
+
+.footer__social-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--white);
+
+  transition: background-color 250ms var(--transition-cubik);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-text-color);
+  }
+}

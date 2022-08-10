@@ -1,0 +1,28 @@
+.contact {
+  font-style: inherit;
+}
+
+.contact__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.contact__map {
+  @include fonts(14px, 24px);
+  color: var(--white);
+}
+
+.contact__link {
+  @extend %link;
+  color: var(--address-color);
+  text-decoration: none;
+
+  @include fonts(14px, 24px);
+  vertical-align: top;
+
+  transition: color 250ms var(--transition-cubik);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+  }
+}

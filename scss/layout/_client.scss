@@ -1,0 +1,33 @@
+.client {
+  @extend %section;
+}
+
+.client__list {
+  display: flex;
+  gap: 30px;
+}
+
+.client__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+
+  color: var(--icons-color);
+  border: 1px solid var(--icons-color);
+
+  transition: border 250ms var(--transition-cubik), color 250ms var(--transition-cubik);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-text-color);
+    color: var(--accent-text-color);
+  }
+}
+
+.client__logo {
+  fill: currentColor;
+}
