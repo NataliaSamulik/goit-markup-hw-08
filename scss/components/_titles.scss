@@ -1,29 +1,41 @@
 .section-title {
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
+  }
 
+  @include fonts(28px, 32.81px, 700);
+
+  @media screen and (min-width: 1200px) {
     @include fonts(36px, 42px, 700);
+  }
 
-    text-align: center;
+  text-align: center;
 }
-.section-subtitle {
-    @include fonts(14px, 16px, 700);
 
-    text-transform: uppercase;
+.section-subtitle {
+  @include fonts(14px, 16px, 700);
+
+  text-transform: uppercase;
 }
 
 .hero__title {
+  width: 360px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  @include fonts(26px, 42px, 900, 0.06em);
+  text-transform: uppercase;
+
+  color: var(--white);
+
+  @media screen and (min-width: 1200px) {
     width: 696px;
-    margin: 0 auto;
-    margin-bottom: 30px;
-
-    color: var(--white);
-   
     @include fonts(44px, 60px, 900, 0.06em);
-
-    text-transform: uppercase;
+  }
 }
 
 .benefits-list__subtitle {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
-

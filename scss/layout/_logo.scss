@@ -1,8 +1,13 @@
 .logo {
-    @extend %link;
+    
     font-family: var(--secondary-font);
+
+    @include fonts(24px, 28px, 700);
    
-    @include fonts(26px, 31px, 700);
+    @media screen and (min-width: 1200px) {
+        @include fonts(26px, 31px, 700);
+    }
+    
 
     
     &__web {

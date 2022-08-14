@@ -4,6 +4,7 @@
 
 .client__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -12,7 +13,6 @@
   align-items: center;
   justify-content: center;
 
-  width: 170px;
   height: 92px;
   border-radius: 4px;
 
@@ -25,6 +25,28 @@
   &:focus {
     border: 1px solid var(--accent-text-color);
     color: var(--accent-text-color);
+  }
+}
+
+.client__item {
+  flex-basis: calc((100% - 30px) / 2);
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+  }
+
+  max-width: 210px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 226px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 170px;
   }
 }
 
